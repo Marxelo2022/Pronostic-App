@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family:'Times New Roman', Times, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+li,ul {
+  padding: 0;
+}
+
+h2{
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-image: url(./image/earth.jpg);
+  background-size:cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather__container {
+  background-color: rgb(143, 136, 136);
+  opacity: 0.9;
+  border-radius: 10px;
+  height: 500px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px 0 rgb(40, 39, 39);
+}
+
+.weather__date {
+  color: blue;
+  font-weight: 800;
+}
+
+.weather__title,.weather__location {
+  color: blue;
+  text-align: center;
+}
+
+.weather__list {
+  list-style: none;
+  padding: 5px;
+}
+
+.fa-solid {
+  color: blue;
+}
+
+.weather__mayus {
+  font-weight: bold;
+  color: blue;
+}
+
+.weather__image {
+  position: relative;
+}
+
+.weather__temperature {
+  color: blue;
+  position: relative;
+  bottom: 20px;
+}
+
+.weather__btn {
+  border: 0 ;
+  background-color: blue;
+  color: white;
+  position: relative;
+  top: 35px;
+  margin-left: 50px;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+@media screen and (min-width:768px) {
+  .weather__container {
+    width: 450px;
+    height: 420px;
+  }
+  .weather__list {
+    margin-left: 250px;
+    position: relative;
+    top:20px;
+    font-size: 17px;
+  }
+  .weather__image {
+    bottom: 150px;
+  }
+  .weather__temperature {
+    bottom: 150px;
+  }
+  .weather__btn {
+    margin-left: 140px;
+  }
+}
