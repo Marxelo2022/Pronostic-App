@@ -17,6 +17,11 @@ h2{
   padding: 0;
 }
 
+button {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   background-image: url(./image/earth.jpg);
   background-size:cover;
@@ -56,6 +61,7 @@ h2{
 
 .fa-solid {
   color: blue;
+  padding-right: 5px;
 }
 
 .weather__mayus {
@@ -74,11 +80,11 @@ h2{
 }
 
 .weather__btn {
+  position: relative;
+  top: 35px;
   border: 0 ;
   background-color: blue;
   color: white;
-  position: relative;
-  top: 35px;
   margin-left: 50px;
   border-radius: 5px;
   padding: 8px;
@@ -104,5 +110,6 @@ h2{
   }
   .weather__btn {
     margin-left: 140px;
+    top: -60px;
   }
 }
